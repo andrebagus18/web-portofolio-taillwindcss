@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  max-width: 100%;
+  height: auto;
+  background-color: #f4fbff;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4rem;
+}
+
+.heading {
+  font-size: 24px;
+  line-height: 36px;
+  color: black;
+  font-weight: initial;
+  margin-left: 70px;
+}
+
+.nav-link {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+  margin: auto 70px;
+}
+
+.nav-link a {
+  font-size: 22px;
+  color: #050505;
+  padding-bottom: 8px;
+}
+
+/* SECTION HERO */
+/* HEADING */
+.hero {
+  max-width: 56rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 45px;
+  padding-inline: 1rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.head-title {
+  font-size: 48px;
+  font-weight: 700;
+  display: inline;
+}
+
+.heading {
+  display: inline;
+}
+
+span {
+  color: transparent;
+  background-image: linear-gradient(to right, #00c0fd, #0056fd);
+  background-clip: text;
+  font-weight: 700;
+  font-size: 48px;
+  display: inline;
+}
+
+.my-bio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  text-align: center;
+}
