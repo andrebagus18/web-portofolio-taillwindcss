@@ -7,27 +7,34 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="main-container w-full h-auto mx-auto my-0 bg-bright-white">
+    <!-- Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } -->
+
+    <div class="w-full h-auto mx-auto my-0 bg-bright-white">
       <div
-        class="navbar w-full h-20 flex items-center justify-between border-b-2 border-b-navy"
+        class="w-full h-20 flex items-center justify-between border-b-2 border-b-navy lg:ps-28 lg:pe-28 xl:ps-150 xl:pe-150"
       >
         <h2>
           <a
-            class="heading font-arial text-lg font-medium text-black ml-5"
+            class="font-arial text-lg font-medium text-black ml-5 md:text-2xl"
             href="index.html"
             target="_blank"
             >Andre Bagus Setiawan</a
           >
         </h2>
-        <div class="nav-link flex justify-around mr-30">
+        <div class="flex justify-around mr-30">
           <a
-            class="text-lg text-black font-arial p-1.5"
+            class="text-lg text-black font-arial p-1.5 md:text-2xl lg:p-2"
             href="blog.html"
             target="_blank"
             >Blog</a
           >
           <a
-            class="text-lg text-black font-arial p-1.5"
+            class="text-lg text-black font-arial p-1.5 md:text-2xl lg:p-2"
             href="about.html"
             target="_blank"
             >About</a
@@ -36,21 +43,24 @@
       </div>
 
       <!-- section hero -->
-      <div class="hero grid w-full grid-cols-1 grid-rows-2">
-        <div class="my-profile mx-5 my-0 row-start-2">
-          <h2 class="name text-2xl font-arial">Bagus</h2>
+      <div
+        class="grid w-full grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 lg:ps-28 lg:pe-28 xl:ps-150 xl:pe-150"
+      >
+        <div class="mx-5 my-0 mt-4 md:order-1">
+          <h2 class="text-lg md:text-2xl font-arial">Bagus</h2>
           <hr
             aria-orientation="horizontal"
-            class="underline w-1/6 mt-2.5 border border-navy"
+            class="w-1/6 mt-2.5 border border-navy md:w-150"
           />
           <div class="title">
             <h1
-              class="font-arial pt-4 pb-6 text-4xl font-semibold text-navy m-0"
-              id="my-title"
+              class="font-arial pt-4 pb-6 text-3xl font-semibold text-navy m-0 2xl:text-5xl"
             >
               Front-End Engineer
             </h1>
-            <p class="font-arial my-bio mb-50 w-full text-base leading-6">
+            <p
+              class="font-arial mb-50 w-full text-base leading-6 xl:text-lg 2xl:text-xl xl:font-light 2xl:font-light"
+            >
               A dedicated Frontend Engineer with a strong passion for
               programming and an insatiable curiosity. Excels in connecting the
               dots between mathematics & philosophy within the coding realm. In
@@ -60,7 +70,7 @@
             </p>
           </div>
           <div
-            class="contact flex p-2.5 mt-10 bg-navy w-200 justify-center items-center rounded-3xl"
+            class="flex p-2.5 mt-10 bg-navy w-200 justify-center items-center rounded-3xl"
           >
             <a
               class="font-arial text-lg text-bright-white font-medium"
@@ -69,46 +79,48 @@
             >
           </div>
         </div>
-        <div class="image row-start-1">
+        <div class="md:order-2">
           <img class="w-full" id="image" src="../img/saya.png" alt="Profile" />
         </div>
       </div>
 
       <!-- section journey -->
 
-      <div class="part-journey grid items-center grid-cols-1 w-full pt-50">
-        <div class="journey grid justify-center items-center pb-5 pt-5">
+      <div
+        class="grid items-center grid-cols-1 w-full pt-50 lg:ps-28 lg:pe-28 xl:ps-150 xl:pe-150"
+      >
+        <div class="grid justify-center items-center pb-5 pt-5">
           <div class="myjourney">
             <h1
               id="j-title"
-              class="font-arial pb-5 border-b-2 border-b-navy text-4xl font-medium"
+              class="font-arial pb-5 border-b-2 border-b-navy text-4xl font-medium xl:text-5xl"
             >
               My Journey
             </h1>
             <!-- <hr aria-orientation="horizontal" class="underline2" /> -->
           </div>
         </div>
-        <div class="history grid p-7 pb-0 grid-cols-1 rows-auto">
-          <div class="img-agency flex items-center justify-center">
+        <div class="history">
+          <div class="history-image">
             <a
               target="_blank"
               href="https://www.linkedin.com/company/hijrabyalamigroup"
             >
               <img
-                class="hero_agency w-200 h-150"
+                class="w-200 h-150"
                 src="../img/history/HijraLogo.webp"
                 alt="Hijra"
             /></a>
           </div>
-          <div class="part-story pt-4">
+          <div class="part-story">
             <div class="story">
-              <h2 class="story-title text-left text-4xl font-medium font-arial">
+              <h2 class="text-left text-4xl font-medium font-arial">
                 Frontend Engineer
               </h2>
-              <h2 class="agency-title text-xl font-bold mb-2.5 font-arial">
+              <h2 class="text-xl font-bold mb-2.5 font-arial">
                 Hijra - Full Time
               </h2>
-              <p class="agency-bio w-80 mb-2.5 font-arial text-sm">
+              <p class="w-80 mb-2.5 font-arial text-sm">
                 Hijra (previously known as the ALAMI Group) is a financial
                 technology company that follows sharia principles. The company
                 offers a range of services, including a peer-to-peer lending
@@ -117,12 +129,10 @@
                 has a presence in 482 cities across 32 Indonesian provinces
                 through both commercial and social initiatives.
               </p>
-              <h2
-                class="part-since font-bold text-base mb-2.5 text-orange font-arial"
-              >
+              <h2 class="font-bold text-base mb-2.5 text-orange font-arial">
                 Aug 2023 - Present
               </h2>
-              <p class="my-info font-arial">
+              <p class="font-arial">
                 My role as a Frontend Engineer at Hijra (formerly the ALAMI
                 Group) has been pivotal in our journey within the world of
                 ethical finance and Sharia-compliant financial technology. I've
@@ -134,8 +144,8 @@
             </div>
           </div>
         </div>
-        <div class="history grid p-10 pb-0 grid-cols-1 row-auto">
-          <div class="img-agency flex justify-center items-center">
+        <div class="history">
+          <div class="history-image">
             <a target="_blank" href="https://www.linkedin.com/company/gredu">
               <img
                 class="hero_agency w-200 h-150"
@@ -143,7 +153,7 @@
                 alt="Gredu"
             /></a>
           </div>
-          <div class="part-story pt-4">
+          <div class="part-story">
             <div class="story">
               <h2 class="story-title font-arial text-left text-4xl font-medium">
                 Frontend Engineer
@@ -173,8 +183,8 @@
             </div>
           </div>
         </div>
-        <div class="history grid p-10 pb-0 grid-cols-1 row-auto">
-          <div class="img-agency flex justify-center items-center">
+        <div class="history">
+          <div class="history-image">
             <a
               target="_blank"
               href="https://www.linkedin.com/company/ruangguru-com/"
@@ -185,7 +195,7 @@
                 alt="RuangGuru"
             /></a>
           </div>
-          <div class="part-story pt-4">
+          <div class="part-story">
             <div class="story">
               <h2 class="story-title font-arial text-left text-4xl font-medium">
                 Software Engineer (FE)
@@ -217,8 +227,8 @@
             </div>
           </div>
         </div>
-        <div class="history grid p-10 pb-0 grid-cols-1 row-auto">
-          <div class="img-agency flex justify-center items-center">
+        <div class="history">
+          <div class="history-image">
             <a
               target="_blank"
               href="https://www.linkedin.com/company/kompeten-co/"
@@ -229,7 +239,7 @@
                 alt="KompetenCO"
             /></a>
           </div>
-          <div class="part-story pt-4">
+          <div class="part-story">
             <div class="story">
               <h2 class="story-title font-arial text-left text-4xl font-medium">
                 Frontend Engineer
@@ -254,8 +264,8 @@
             </div>
           </div>
         </div>
-        <div class="history grid p-10 pb-0 grid-cols-1 row-auto">
-          <div class="img-agency flex justify-center items-center">
+        <div class="history">
+          <div class="history-image">
             <a
               target="_blank"
               href="https://www.linkedin.com/company/hash-indonesia/"
@@ -266,7 +276,7 @@
                 alt="HashLogo"
             /></a>
           </div>
-          <div class="part-story pt-4">
+          <div class="part-story">
             <div class="story">
               <h2 class="story-title font-arial text-left text-4xl font-medium">
                 Software Engineer (FE)
@@ -294,38 +304,33 @@
 
       <!-- section work -->
 
-      <div class="part-work pt-50">
-        <div class="work-title grid justify-center items-center">
+      <div class="pt-50 lg:ps-28 lg:pe-28 xl:ps-150 xl:pe-150">
+        <div class="grid justify-center items-center">
           <h1
-            class="font-arial font-bold text-4xl p-5 border-b-2 border-b-navy"
-            id="sub-title"
+            class="font-arial font-bold text-4xl p-5 border-b-2 border-b-navy xl:text-5xl"
           >
             Find My Work
           </h1>
           <!-- <hr aria-orientation="horizontal" class="underline3" /> -->
         </div>
         <div
-          class="my-work grid grid-cols-1 gap-5 justify-center items-center pt-30 mt-30 mx-10"
+          class="grid grid-cols-1 gap-5 justify-center items-center pt-30 mt-30 mx-10 md:grid-cols-2 lg:grid-cols-3 lg:mx-0"
         >
-          <div class="sub-work bg-primary rounded-2xl p-4 backdrop-blur-xl">
+          <div class="bg-primary rounded-2xl p-4 backdrop-blur-xl">
             <a href="https://pomodoro-podomoro.vercel.app/" target="_blank">
               <img
-                class="work-img w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
+                class="w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
                 src="../img/work/Pomodoro.webp"
                 alt="pomodoro"
               />
-              <h2
-                class="head-work font-arial tracking-wide text-xl mt-4 mb-4 text-black"
-              >
-                Pomodoro
-              </h2>
-              <div class="nav-work flex justify-between items-center">
+              <h2 class="sub-title">Pomodoro</h2>
+              <div class="nav-link">
                 <a
                   href="https://github.com/dannycahyo/pomodoro-app"
                   target="_blank"
-                  class="repo-link inline-flex items-center justify-center h-30 w-130 rounded-3xl text-base font-bold text-white relative left-303 bg-navy"
+                  class="repo-link"
                 >
-                  <span class="git-icon inline-flex m-2">
+                  <span class="inline-flex m-1.5">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -348,33 +353,29 @@
                 </a>
                 <a
                   href="https://pomodoro-podomoro.vercel.app/"
-                  class="detail-link flex justify-center items-center rounded-3xl bg-white text-base font-bold text-yblue h-30 w-1/3"
+                  class="detail-link"
                   target="_blank"
                 >
-                  <p class="detail font-arial">See Detail</p>
+                  <p class="font-arial">See Detail</p>
                 </a>
               </div>
             </a>
           </div>
-          <div class="sub-work bg-primary rounded-2xl p-4 backdrop-blur-xl">
+          <div class="bg-primary rounded-2xl p-4 backdrop-blur-xl">
             <a href="https://music-player-yow.vercel.app/" target="_blank">
               <img
-                class="work-img w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
+                class="w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
                 src="../img/work/Music Player.webp"
                 alt="musicplayer"
               />
-              <h2
-                class="head-work font-arial tracking-wide text-xl mt-4 mb-4 text-black"
-              >
-                Music Player
-              </h2>
-              <div class="nav-work flex justify-between items-center">
+              <h2 class="sub-title">Music Player</h2>
+              <div class="nav-link">
                 <a
                   href="https://github.com/dannycahyo/pomodoro-app"
                   target="_blank"
-                  class="repo-link inline-flex items-center justify-center h-30 w-130 rounded-3xl text-base font-bold text-white relative left-303 bg-navy"
+                  class="repo-link"
                 >
-                  <span class="git-icon inline-flex m-2">
+                  <span class="inline-flex m-1.5">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -397,33 +398,29 @@
                 </a>
                 <a
                   href="https://pomodoro-podomoro.vercel.app/"
-                  class="detail-link flex justify-center items-center rounded-3xl bg-white text-base font-bold text-yblue h-30 w-1/3"
+                  class="detail-link"
                   target="_blank"
                 >
-                  <p class="detail font-arial">See Detail</p>
+                  <p class="font-arial">See Detail</p>
                 </a>
               </div>
             </a>
           </div>
-          <div class="sub-work bg-primary rounded-2xl p-4 backdrop-blur-xl">
+          <div class="bg-primary rounded-2xl p-4 backdrop-blur-xl">
             <a href="https://anika.vercel.app/" target="_blank">
               <img
-                class="work-img w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
+                class="w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
                 src="../img/work/Anika.webp"
                 alt="Anika"
               />
-              <h2
-                class="head-work font-arial tracking-wide text-xl mt-4 mb-4 text-black"
-              >
-                Anika
-              </h2>
-              <div class="nav-work flex justify-between items-center">
+              <h2 class="sub-title">Anika</h2>
+              <div class="nav-link">
                 <a
                   href="https://github.com/dannycahyo/pomodoro-app"
                   target="_blank"
-                  class="repo-link inline-flex items-center justify-center h-30 w-130 rounded-3xl text-base font-bold text-white relative left-303 bg-navy"
+                  class="repo-link"
                 >
-                  <span class="git-icon inline-flex m-2">
+                  <span class="inline-flex m-1.5">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -446,33 +443,29 @@
                 </a>
                 <a
                   href="https://pomodoro-podomoro.vercel.app/"
-                  class="detail-link flex justify-center items-center rounded-3xl bg-white text-base font-bold text-yblue h-30 w-1/3"
+                  class="detail-link"
                   target="_blank"
                 >
-                  <p class="detail font-arial">See Detail</p>
+                  <p class="font-arial">See Detail</p>
                 </a>
               </div>
             </a>
           </div>
-          <div class="sub-work bg-primary rounded-2xl p-4 backdrop-blur-xl">
+          <div class="bg-primary rounded-2xl p-4 backdrop-blur-xl">
             <a href="https://try-out-app.vercel.app/" target="_blank">
               <img
-                class="work-img w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
+                class="w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
                 src="../img/work/Try Out.webp"
                 alt="tryout"
               />
-              <h2
-                class="head-work font-arial tracking-wide text-xl mt-4 mb-4 text-black"
-              >
-                Try Out
-              </h2>
-              <div class="nav-work flex justify-between items-center">
+              <h2 class="sub-title">Try Out</h2>
+              <div class="nav-link">
                 <a
                   href="https://github.com/dannycahyo/pomodoro-app"
                   target="_blank"
-                  class="repo-link inline-flex items-center justify-center h-30 w-130 rounded-3xl text-base font-bold text-white relative left-303 bg-navy"
+                  class="repo-link"
                 >
-                  <span class="git-icon inline-flex m-2">
+                  <span class="inline-flex m-1.5">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -495,33 +488,29 @@
                 </a>
                 <a
                   href="https://pomodoro-podomoro.vercel.app/"
-                  class="detail-link flex justify-center items-center rounded-3xl bg-white text-base font-bold text-yblue h-30 w-1/3"
+                  class="detail-link"
                   target="_blank"
                 >
-                  <p class="detail font-arial">See Detail</p>
+                  <p class="font-arial">See Detail</p>
                 </a>
               </div>
             </a>
           </div>
-          <div class="sub-work bg-primary rounded-2xl p-4 backdrop-blur-xl">
+          <div class="bg-primary rounded-2xl p-4 backdrop-blur-xl">
             <a href="https://majer-otang-kontrakan.vercel.app/" target="_blank">
               <img
-                class="work-img w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
+                class="w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
                 src="../img/work/Majer Otang.webp"
                 alt="majerotang"
               />
-              <h2
-                class="head-work font-arial tracking-wide text-xl mt-4 mb-4 text-black"
-              >
-                Majer Otang
-              </h2>
-              <div class="nav-work flex justify-between items-center">
+              <h2 class="sub-title">Majer Otang</h2>
+              <div class="nav-link">
                 <a
                   href="https://github.com/dannycahyo/pomodoro-app"
                   target="_blank"
-                  class="repo-link inline-flex items-center justify-center h-30 w-130 rounded-3xl text-base font-bold text-white relative left-303 bg-navy"
+                  class="repo-link"
                 >
-                  <span class="git-icon inline-flex m-2">
+                  <span class="inline-flex m-1.5">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -544,36 +533,32 @@
                 </a>
                 <a
                   href="https://pomodoro-podomoro.vercel.app/"
-                  class="detail-link flex justify-center items-center rounded-3xl bg-white text-base font-bold text-yblue h-30 w-1/3"
+                  class="detail-link"
                   target="_blank"
                 >
-                  <p class="detail font-arial">See Detail</p>
+                  <p class="font-arial">See Detail</p>
                 </a>
               </div>
             </a>
           </div>
-          <div class="sub-work bg-primary rounded-2xl p-4 backdrop-blur-xl">
+          <div class="bg-primary rounded-2xl p-4 backdrop-blur-xl">
             <a
               href="https://github.com/dannycahyo/book-super-app"
               target="_blank"
             >
               <img
-                class="work-img w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
+                class="w-full h-237 object-cover rounded-tl-lg rounded-tr-lg"
                 src="../img/work/Book Super App.webp"
                 alt="booksuper"
               />
-              <h2
-                class="head-work font-arial tracking-wide text-xl mt-4 mb-4 text-black"
-              >
-                Book Super App
-              </h2>
-              <div class="nav-work flex justify-between items-center">
+              <h2 class="sub-title">Book Super App</h2>
+              <div class="nav-link">
                 <a
                   href="https://github.com/dannycahyo/pomodoro-app"
                   target="_blank"
-                  class="repo-link inline-flex items-center justify-center h-30 min-w-130 rounded-3xl text-base font-bold text-white relative left-303 bg-navy"
+                  class="repo-link"
                 >
-                  <span class="git-icon inline-flex m-2">
+                  <span class="inline-flex m-1.5">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -596,10 +581,10 @@
                 </a>
                 <a
                   href="https://pomodoro-podomoro.vercel.app/"
-                  class="detail-link flex justify-center items-center rounded-3xl bg-white text-base font-bold text-yblue h-30 w-1/3"
+                  class="detail-link"
                   target="_blank"
                 >
-                  <p class="detail font-arial">See Detail</p>
+                  <p class="font-arial">See Detail</p>
                 </a>
               </div>
             </a>
@@ -608,69 +593,66 @@
       </div>
 
       <!-- section personal -->
-      <div class="part-personal ps-40 pe-50 pt-50 pb-50">
+      <div
+        class="ps-40 pe-50 pt-50 pb-50 lg:ps-28 lg:pe-28 xl:ps-150 xl:pe-150"
+      >
         <div class="head-person">
-          <div class="my-title flex justify-center items-center">
+          <div class="flex justify-center items-center">
             <h1
-              class="font-arial font-bold text-3xl text-center pb-5 border-b-2 border-b-navy"
-              id="head-title"
+              class="font-arial font-bold text-3xl text-center pb-5 border-b-2 border-b-navy lg:text-4xl xl:text-5xl"
             >
-              Let's Connect <br />and Say Hi
+              Let's Connect and Say Hi
             </h1>
             <!-- <hr aria-orientation="horizontal" class="underline4" /> -->
           </div>
         </div>
         <div
-          class="my-personal grid justify-center items-center gap-5 grid-cols-1 mt-9 pt-9"
+          class="grid justify-center items-center gap-5 grid-cols-1 mt-9 pt-9 md:grid-cols-2 xl:grid-cols-4"
         >
-          <div class="my-sosmed w-full box-border p-3 rounded-lg bg-primary2">
+          <div class="w-full box-border p-3 rounded-lg bg-primary2">
             <div class="detail-sosmed">
-              <div class="link-sosmed flex justify-between items-center">
+              <div class="flex justify-between items-center">
                 <img
                   class="img-sosmed"
                   src="../img/sosmed/LinkedIn.webp"
                   alt="linkedin"
                 />
                 <span
-                  class="right-title flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
+                  class="flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
                 >
-                  <p
-                    class="p-title font-arial flex justify-center text-dblue text-xs"
-                  >
+                  <p class="font-arial flex justify-center text-dblue text-xs">
                     My Profesional Life
                   </p>
                 </span>
               </div>
 
-              <h2 class="sosmed-title font-arial text-2xl mt-6">LinkedIn</h2>
+              <h2 class="font-arial text-2xl mt-6">LinkedIn</h2>
               <a
-                class="follow-link font-arial flex justify-center items-center h-40 w-full rounded-3xl mt-6 text-white bg-lskyblue2 text-base font-bold"
+                class="font-arial flex justify-center items-center h-40 w-full rounded-3xl mt-6 text-white bg-lskyblue2 text-base font-bold"
                 target="_blank"
                 href="https://www.linkedin.com/in/danny-cahyo"
                 >Follow Me</a
               >
             </div>
           </div>
-          <div class="my-sosmed w-full box-border p-3 rounded-lg bg-primary2">
+          <div class="w-full box-border p-3 rounded-lg bg-primary2">
             <div class="detail-sosmed">
-              <div class="link-sosmed flex justify-between items-center">
+              <div class="flex justify-between items-center">
                 <img
                   class="img-sosmed"
                   src="../img/sosmed/Instagram.webp"
                   alt="Instagram"
                 />
                 <span
-                  class="right-title flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
+                  class="flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
                 >
-                  <p
-                    class="p-title font-arial flex justify-center text-dblue text-xs"
-                  >
+                  <p class="font-arial flex justify-center text-dblue text-xs">
                     My Daily Life
                   </p>
                 </span>
               </div>
 
-              <h2 class="sosmed-title font-arial text-2xl mt-6">Instagram</h2>
+              <h2 class="font-arial text-2xl mt-6">Instagram</h2>
               <a
                 class="follow-link font-arial flex justify-center items-center h-40 w-full rounded-3xl mt-6 text-white bg-lskyblue2 text-base font-bold"
                 target="_blank"
@@ -679,25 +661,23 @@
               >
             </div>
           </div>
-          <div class="my-sosmed w-full box-border p-3 rounded-lg bg-primary2">
+          <div class="w-full box-border p-3 rounded-lg bg-primary2">
             <div class="detail-sosmed">
-              <div class="link-sosmed flex justify-between items-center">
+              <div class="flex justify-between items-center">
                 <img
                   class="img-sosmed"
                   src="../img/sosmed/Github.webp"
                   alt="Github"
                 />
                 <span
-                  class="right-title flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
+                  class="flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
                 >
-                  <p
-                    class="p-title font-arial flex justify-center text-dblue text-xs"
-                  >
+                  <p class="font-arial flex justify-center text-dblue text-xs">
                     Open Source
                   </p>
                 </span>
               </div>
-              <h2 class="sosmed-title font-arial text-2xl mt-6">Github</h2>
+              <h2 class="font-arial text-2xl mt-6">Github</h2>
               <a
                 class="follow-link font-arial flex justify-center items-center h-40 w-full rounded-3xl mt-6 text-white bg-lskyblue2 text-base font-bold"
                 target="_blank"
@@ -706,26 +686,24 @@
               >
             </div>
           </div>
-          <div class="my-sosmed w-full box-border p-3 rounded-lg bg-primary2">
+          <div class="w-full box-border p-3 rounded-lg bg-primary2">
             <div class="detail-sosmed">
-              <div class="link-sosmed flex justify-between items-center">
+              <div class="flex justify-between items-center">
                 <img
                   class="img-sosmed"
                   src="../img/sosmed/Tiktok.webp"
                   alt="Tiktok"
                 />
                 <span
-                  class="right-title flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
+                  class="flex justify-center items-center bg-lskyblue ps-3 pe-3 rounded-full min-w-8 min-h-8 max-w-full"
                 >
-                  <p
-                    class="p-title font-arial flex justify-center text-dblue text-xs"
-                  >
+                  <p class="font-arial flex justify-center text-dblue text-xs">
                     Content Creation
                   </p>
                 </span>
               </div>
 
-              <h2 class="sosmed-title font-arial text-2xl mt-6">Tiktok</h2>
+              <h2 class="font-arial text-2xl mt-6">Tiktok</h2>
               <a
                 class="follow-link font-arial flex justify-center items-center h-40 w-full rounded-3xl mt-6 text-white bg-lskyblue2 text-base font-bold"
                 target="_blank"
@@ -740,35 +718,30 @@
       <!-- section footer -->
       <hr
         aria-orientation="horizontal"
-        class="top-line border-b-2 border-b-navy w-full mb-30"
+        class="border-b-2 border-b-navy w-full mb-30"
       />
-      <div class="footer ps-40 pe-40 pb-30">
-        <div class="my-footer flex flex-col items-center justify-center">
+      <div class="ps-40 pe-40 pb-30 lg:ps-28 lg:pe-28 xl:ps-150 xl:pe-150">
+        <div
+          class="flex flex-col items-center justify-center md:justify-between md:flex-row"
+        >
           <div class="signed">
-            <a
-              href="#home"
-              class="my-signed font-arial font-bold text-black text-2xl"
-            >
-              <h2 id="name-signed">Andre Bagus Setiawan</h2>
+            <a href="#home" class="font-arial font-bold text-black text-2xl">
+              <h2>Andre Bagus Setiawan</h2>
             </a>
-            <p class="copyright font-arial mt-2.5 text-center">
+            <p class="font-arial mt-2.5 text-center md:text-left">
               All rights reserved &#x00A9; <br />Andre Bagus Setiawan 2024
             </p>
           </div>
           <div class="stack">
-            <h2
-              class="stack-heading font-arial font-bold text-xl flex justify-center"
-            >
+            <h2 class="font-arial font-bold text-xl flex justify-center">
               Get in touch!
             </h2>
-            <div
-              class="icon-stack flex justify-between items-center flex-row mt-2"
-            >
-              <div class="group-stack inline-flex gap-4">
+            <div class="flex justify-between items-center flex-row mt-2">
+              <div class="inline-flex gap-4">
                 <a
                   href="mailto:@dannydwicahyono@gmail.com"
                   target="_blank"
-                  class="icon-email inline-flex justify-center items-center bg-ypurple rounded-lg h-10 w-10 text-black"
+                  class="inline-flex justify-center items-center bg-ypurple rounded-lg h-10 w-10 text-black"
                 >
                   <svg
                     stroke="currentColor"
@@ -796,7 +769,7 @@
                 <a
                   href="https://www.linkedin.com/in/danny-cahyo"
                   target="_blank"
-                  class="icon-linkedin inline-flex justify-center items-center bg-ypurple rounded-lg h-10 w-10 text-black"
+                  class="inline-flex justify-center items-center bg-ypurple rounded-lg h-10 w-10 text-black"
                 >
                   <svg
                     stroke="currentColor"
@@ -818,7 +791,7 @@
                 <a
                   href="https://github.com/dannycahyo"
                   target="_blank"
-                  class="icon-github inline-flex justify-center items-center bg-ypurple rounded-lg h-10 w-10 text-black"
+                  class="inline-flex justify-center items-center bg-ypurple rounded-lg h-10 w-10 text-black"
                 >
                   <svg
                     stroke="currentColor"

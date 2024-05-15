@@ -8,3 +8,27 @@
     --color-primary2: 165, 202, 255;
   }
 }
+
+@layer components {
+  .part-story {
+    @apply pt-4 xl:pt-0 xl:col-start-2 xl:col-end-6;
+  }
+  .history {
+    @apply grid p-7 pb-0 grid-cols-1 xl:grid-cols-5 xl:px-0;
+  }
+  .history-image {
+    @apply flex items-center justify-center xl:items-start xl:col-span-1;
+  }
+  .sub-title {
+    @apply font-arial tracking-wide text-xl mt-4 mb-4 text-black lg:text-2xl lg:font-medium;
+  }
+  .nav-link {
+    @apply grid grid-cols-7 justify-between items-center md:grid-cols-8;
+  }
+  .repo-link {
+    @apply col-start-1 col-end-3 inline-flex items-center justify-center h-40 w-auto rounded-3xl text-sm font-bold text-white relative bg-navy md:text-base md:col-end-4 lg:col-end-5 lg:text-lg lg:font-normal 2xl:col-end-4;
+  }
+  .detail-link {
+    @apply col-start-6 col-end-8 flex justify-center items-center rounded-3xl bg-white text-sm font-bold text-yblue h-40 w-auto md:text-base md:col-end-9 lg:text-lg lg:font-normal;
+  }
+}
